@@ -6,7 +6,8 @@ x = int(input("请输入小于50的数："))
 while count < 50:
     for i in range(2, x):
         if x % i == 0:
-            print("x is not a prime!")
+            print("{} is not a prime!".format(i))
             break
         else:
-            print('x is a prime')
+            print('{} is a prime'.format(i))
+    count += 1
